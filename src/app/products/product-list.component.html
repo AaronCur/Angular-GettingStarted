@@ -41,7 +41,8 @@
                         [style.margin.px] = 'imageMargin'>
                 </td>
                 <!--Interpolation-->
-                <td>{{product.productName}}</td>
+                <!--Path, param-->
+                <td><a [routerLink]="[ '/products', product.productId ]">{{product.productName}}</a></td>
                 <!-- ConvertToSpaces is a custom pipe-->
                 <td>{{product.productCode | lowercase | convertToSpaces: "-"}}</td>
                 <td>{{product.releaseDate}}</td>
