@@ -13,7 +13,6 @@ import { ProductModule } from './products/product.module';
     AppComponent,
     WelcomeComponent
   ],
-
   imports: [
     BrowserModule,
     HttpClientModule,
